@@ -1,0 +1,274 @@
+{% extends 'base.html' %}
+
+{% block head %}
+Projects
+{% endblock head %}
+
+{% block body %}
+<br>
+<main role="main">
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Projects</h1>
+      <br>
+      <p class="lead text-muted">This is the Collection of My Projects. Here you can access variety of Projects written
+        in different programming languages. You can download the source code as well. Language of Code is Provided below
+        the Description of Project.</p>
+    </div>
+    <br>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top"
+              data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+              alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+              src="{{url_for('static', filename='Projects/flask.png')}}" data-holder-rendered="true">
+            <div class="card-body">
+              <p class="text-center"><big><b>SGPA Data Recorder Website</b></big>
+                <hr><small class="text-muted">Date Added : 23-09-2021 </small>
+              </p>
+
+              <p class="card-text">A Python-Flask App with the support of SQLite Database. You Can Add,
+                Update, Delete your SGPA here along with Registeration Number. It also has a Feedback option where you
+                can Contact me if you face any difficulties.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a type="button" href="/proj_det#flask" class="btn btn-sm btn-dark ">View More</button></a>
+                  <button type="button" class="btn btn-sm btn-primary mx-1" disabled>Python/Flask</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top"
+              data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+              alt="Thumbnail [100%x225]" src="{{url_for('static', filename='Projects/hang.png')}}"
+              data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+            <div class="card-body">
+              <p class="text-center"><big><b>Hangman Game</b></big>
+                <hr><small class="text-muted">Date Added : 23-09-2021 </small>
+              </p>
+
+              <p class="card-text">In Hangman Game you will have to guess the letters of a word untill your life runs
+                out. The program will select any word randomly from the large amount of words in it's Data. It will also
+                record your Status(Win, Lose or Tie) in a text file.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a type="button" href="/proj_det#hang" class="btn btn-sm btn-dark ">View More</button></a>
+                  <button type="button" class="btn btn-sm btn-primary mx-1" disabled>Python</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top"
+              data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+              alt="Thumbnail [100%x225]" src="{{url_for('static', filename='Projects/drs.png')}}"
+              data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+            <div class="card-body">
+              <p class="text-center"><big><b>Decision Review System GUI</b></big>
+                <hr><small class="text-muted">Date Added : 23-09-2021 </small>
+              </p>
+
+              <p class="card-text">You can Input your Video and Use it to check whether the player is Out or NotOut in
+                Slow, Very Slow, Fast and Very Fast Modes. You can Give the Out/NotOut Desicion based on that. Just like
+                the real
+                DRS System. Be Your Own 3rd Umpire!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a type="button" href="/proj_det#drs" class="btn btn-sm btn-dark ">View More</button></a>
+                  <button type="button" class="btn btn-sm btn-primary mx-1" disabled>Python/Tkinter</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top"
+              data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+              alt="Thumbnail [100%x225]" src="{{url_for('static', filename='Projects/notepad.png')}}"
+              data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+            <div class="card-body">
+              <p class="text-center"><big><b>Notepad</b></big>
+                <hr><small class="text-muted">Date Added : 23-09-2021 </small>
+              </p>
+
+              <p class="card-text">This is a simple Notepad created with the help of Python and Tkinter. It can do
+                everything a basic Notepad can do. Be it Cut, Copy, Paste or Create New file , Open Files etc.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a type="button" href="/proj_det#notepad" class="btn btn-sm btn-dark ">View More</button></a>
+                  <button type="button" class="btn btn-sm btn-primary mx-1" disabled>Python/Tkinter</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top"
+              data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+              alt="Thumbnail [100%x225]" src="{{url_for('static', filename='Projects/hbd.png')}}"
+              data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+            <div class="card-body">
+              <p class="text-center"><big><b>Automatic Birthday Wisher</b></big>
+                <hr><small class="text-muted">Date Added : 23-09-2021 </small>
+              </p>
+
+              <p class="card-text">This is a Automatic Birthday Wisher. All you have to do is add the Birthdays, Emails
+                of your Relatives, Friends and Others in Data File and Schedule the Program. The Program will
+                automatically wish them.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a type="button" href="/proj_det#bday" class="btn btn-sm btn-dark ">View More</button></a>
+                  <button type="button" class="btn btn-sm btn-primary mx-1" disabled>Python</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top"
+              data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+              alt="Thumbnail [100%x225]" src="{{url_for('static', filename='Projects/bill.png')}}"
+              data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+            <div class="card-body">
+              <p class="text-center"><big><b>Restaurant Bill Calculating GUI</b></big>
+                <hr><small class="text-muted">Date Added : 23-09-2021 </small>
+              </p>
+
+              <p class="card-text">This is an GUI which Calculates the Bill of a Customer based on their Orders. It also
+                includes CGST in the bill as well. It saves the Bills along with it's detials in a Orders File. You Can
+                accesss it any time you want.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a type="button" href="/proj_det#bill" class="btn btn-sm btn-dark ">View More</button></a>
+                  <button type="button" class="btn btn-sm btn-primary mx-1" disabled>Python/Tkinter</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top"
+              data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+              alt="Thumbnail [100%x225]" src="{{url_for('static', filename='Projects/currency.png')}}"
+              data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+            <div class="card-body">
+              <p class="text-center"><big><b>Currency Converter</b></big>
+                <hr><small class="text-muted">Date Added : 23-09-2021 </small>
+              </p>
+
+              <p class="card-text">This is an Converter which converts to any currency to INR and vice verca. Here you
+                can convert INR to 52 different currencies or from 52 different Currencies to INR. </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a type="button" href="/proj_det#currency" class="btn btn-sm btn-dark ">View More</button></a>
+                  <button type="button" class="btn btn-sm btn-primary mx-1" disabled>Python</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top"
+              data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+              alt="Thumbnail [100%x225]" src="{{url_for('static', filename='Projects/ttt.png')}}"
+              data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+            <div class="card-body">
+              <p class="text-center"><big><b>Tic-Tac-Toe</b></big>
+                <hr><small class="text-muted">Date Added : 23-09-2021 </small>
+              </p>
+
+              <p class="card-text">This is a 2-Players Tic-Tac-Toe Game. Provide Names of players and Chose X, O and
+                start Playing. It provides you a 3x3 tic-tac-toe grid with a side grid which indicates the location of
+                blocks. </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a type="button" href="/proj_det#tic" class="btn btn-sm btn-dark ">View More</button></a>
+                  <button type="button" class="btn btn-sm btn-primary mx-1" disabled>Python</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top"
+              data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+              alt="Thumbnail [100%x225]" src="{{url_for('static', filename='Projects/calc.png')}}"
+              data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+            <div class="card-body">
+              <p class="text-center"><big><b>Calculator GUI</b></big>
+                <hr><small class="text-muted">Date Added : 23-09-2021 </small>
+              </p>
+
+              <p class="card-text">A Calculator programmed in Python/Tkinter with really creative buttons and Features
+                like Reset Memory. </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a type="button" href="/proj_det#calculator" class="btn btn-sm btn-dark ">View More</button></a>
+                  <button type="button" class="btn btn-sm btn-primary mx-1" disabled>Python/Tkinter</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top"
+              data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+              alt="Thumbnail [100%x225]" src="{{url_for('static', filename='Projects/weight.png')}}"
+              data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+            <div class="card-body">
+              <p class="text-center"><big><b>Weight Converter GUI</b></big>
+                <hr><small class="text-muted">Date Added : 23-09-2021 </small>
+              </p>
+
+              <p class="card-text">From this GUI you can convert weights in 7 different units. Which includes gram, kilo
+                gram, milli gram, micro gram, tonne, pound and ounce. </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a type="button" href="/proj_det#weight" class="btn btn-sm btn-dark ">View More</button></a>
+                  <button type="button" class="btn btn-sm btn-primary mx-1" disabled>Python/Tkinter</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <br>
+      <hr>
+      <div class="container">
+        <p class="float-end"><a href="/project" class="btn btn-dark">Back to top</a></p>
+        <div>
+        </div>
+      </div>
+
+</main>
+{% endblock body %}

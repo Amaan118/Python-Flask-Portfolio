@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+
+{% block head %}
+Amaan Khan
+{% endblock head %}
+
+{% block body %}
+
+<div class="px-4 pt-5 my-5 text-center">
+    <img src="{{url_for('static', filename='download/mine.jpg')}}" alt="Amaan Khan" class="shadow-lg rounded-circle"
+        width="150" height="150">
+
+    <h1 class="page-title mt0 mb1">Amaan Khan</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">I am a Student, Programmer and Backend Web Developer. I love coding and what I love even more is working on different kind of projects.</p>
+    </div>
+
+    <br>
+    <br>
+    <h2 class="pb-2 border-bottom">Skills</h2>
+
+    <style>
+        .center {
+            margin: auto;
+            width: 65%;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+    </style>
+
+    <div class="container">
+        <div class="center">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+
+                <div class="col d-flex align-items-start">
+                    <div>
+                        <h4 class="fw-bold mb-0 content-center"><img
+                                src="{{url_for('static', filename='skills/python.ico')}}" width="50" height="50"></h4>
+                        <h3>★★★★★</h3>
+                    </div>
+                </div>
+
+                <div class="col d-flex align-items-start">
+                    <div>
+                        <h4 class="fw-bold mb-0 content-center"><img
+                                src="{{url_for('static', filename='skills/c.ico')}}" width="50" height="50"></h4>
+                        <h3>★★★★★</h3>
+                    </div>
+                </div>
+
+                <div class="col d-flex align-items-start">
+                    <div>
+                        <h4 class="fw-bold mb-0 content-center"><img
+                                src="{{url_for('static', filename='skills/flask.ico')}}" width="50" height="50"></h4>
+                        <h3>★★★★☆</h3>
+                    </div>
+                </div>
+
+                <div class="col d-flex align-items-start">
+                    <div>
+                        <h4 class="fw-bold mb-0 content-center"><img
+                                src="{{url_for('static', filename='skills/html.ico')}}" width="50" height="50"></h4>
+                        <h3>★★★☆☆</h3>
+                    </div>
+                </div>
+
+                <div class="col d-flex align-items-start my-4">
+                    <div>
+                        <h4 class="fw-bold mb-0 content-center my-4">DS & Algo</h4>
+                        <h3>★★★☆☆</h3>
+                    </div>
+                </div>
+
+                <div class="col d-flex align-items-start">
+                    <div>
+                        <h4 class="fw-bold mb-0 content-center"><img
+                                src="{{url_for('static', filename='skills/sql.ico')}}" width="50" height="50"></h4>
+                        <h3>★★★☆☆</h3>
+                    </div>
+                </div>
+
+                <div class="col d-flex align-items-start">
+                    <div>
+                        <h4 class="fw-bold mb-0 content-center"><img
+                                src="{{url_for('static', filename='skills/java.ico')}}" width="50" height="50"></h4>
+                        <h3>★★☆☆☆</h3>
+                    </div>
+                </div>
+
+                <div class="col d-flex align-items-start">
+                    <div>
+                        <h4 class="fw-bold mb-0 content-center"><img
+                                src="{{url_for('static', filename='skills/css.ico')}}" width="50" height="50"></h4>
+                        <h3>☆☆☆☆☆</h3>
+                    </div>
+                </div>
+
+                <div class="col d-flex align-items-start">
+                    <div>
+                        <h4 class="fw-bold mb-0 content-center my-1"><img
+                                src="{{url_for('static', filename='skills/js.ico')}}" width="42" height="42"></h4>
+                        <h3>☆☆☆☆☆</h3>
+                    </div>
+                </div>
+
+                <div class="col d-flex align-items-start">
+                    <div>
+                        <h4 class="fw-bold mb-0 content-center"><img
+                                src="{{url_for('static', filename='skills/dj.ico')}}" width="50" height="50"></h4>
+                        <h3>☆☆☆☆☆</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <p class="float-end"><a href="/about" class="btn btn-dark">Back to top</a></p>
+        <p class="float-start">
+            <b>Connect to me through : </b>
+            <a href="https://www.linkedin.com/in/amaan-khan-3351711b4" target="_blank"><img src="{{url_for('static', filename='Home/linkedin.ico')}}" class="rounded-circle mx-2" width="40" height="40"></a>
+            
+            <a href="https://github.com/AmaanKhan63" target="_blank"><img src="{{url_for('static', filename='Home/github.ico')}}" class="rounded-circle mx-2" width="40" height="40"></a>
+            
+            <a href="https://www.instagram.com/aman_khan0_o/" target="_blank"><img src="{{url_for('static', filename='Home/insta.ico')}}" class="rounded-circle mx-2" width="40" height="40"></a>
+            
+            <a href="https://www.hackerrank.com/amankhanak063" target="_blank"><img src="{{url_for('static', filename='Home/hackerrank.ico')}}" class="rounded-circle mx-2" width="40" height="40"></a>
+            
+          </p>
+    <div>
+</div>
+
+{% endblock body %}

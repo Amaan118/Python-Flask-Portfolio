@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block head %}
+Under Graduation
+{% endblock head %}
+
+{% block body %}
+<style>
+    body {
+        background-image: url('{{url_for("static", filename="download/academic-bg.jpg")}}');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+</style>
+
+<br>
+<div class="container">
+    <form>
+        <fieldset disabled>
+            <legend><b>Under Graduation Details</b></legend>
+            <br>
+            <hr>
+            <div class="mb-3">
+                <h5><label for="disabledTextInput" class="form-label">University : </label></h5>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="SWAMI RAMANAND TEERTH MARATHWADA UNIVERSITY">
+            </div>
+
+            <div class="mb-3">
+                <h5><label for="disabledTextInput" class="form-label">Name : </label></h5>
+                <input type="text" id="disabledTextInput" class="form-control"
+                    placeholder="KHAN MOHAMMAD AMAAN G SAIFUL MALIK">
+            </div>
+
+            <div class="mb-3">
+                <h5><label for="disabledTextInput" class="form-label">College : </label></h5>
+                <input type="text" id="disabledTextInput" class="form-control"
+                    placeholder="SHRI GURU GOVIND SINGHJI INSTITUTE OF ENGINEERING & TECHNOLOGY, NANDED.">
+            </div>
+
+            <div class="mb-3">
+                <h5><label for="disabledTextInput" class="form-label">Year of Completion : </label></h5>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="2023">
+            </div>
+
+            <div class="mb-3">
+                <h5><label for="disabledTextInput" class="form-label">CGPA : </label></h5>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="8.72">
+            </div>
+
+        </fieldset>
+    </form>
+</div>
+
+<footer class="container">
+    <br>
+    <hr>
+    <p class="float-end"><a href="/academic" class="btn btn-dark">Return to Academics</a></p>
+    <p>
+      <a href="/hsc" class="btn btn-dark">< HSC Details</a>              
+    </p>
+</footer>
+{% endblock body %}

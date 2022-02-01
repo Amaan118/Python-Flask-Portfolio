@@ -1,0 +1,254 @@
+{% extends 'base.html' %}
+
+{% block head %}
+Project Details
+{% endblock head %}
+
+{% block body %}
+
+<style>
+    body {
+      background-image: url('{{url_for("static", filename="download/project-bg.jpg")}}');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+  </style>
+<br>
+<div class="container" style="color: azure;">
+    <div id="flask">
+        <a name="flask">
+            <h1>SGPA Data Collector</h1>
+            <p><big>Its an application made with the help of Flask micro framework in Python. It is CRUD(create, Read,
+                    Update, Delete) based application. We can store all the SGPA semester wise in the tabular form here.
+                    I have used SQLite Database for connecting and storing all the data related to records. It has a
+                    Contact Developer section for allthe feedbacks and complaints.</big></p>
+                    <a type="button" class="btn btn-outline-warning" href="https://sgpa-storer.herokuapp.com/" target="_blank">Visit
+                        SGPA Storer App.</a></big>
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+
+    <div id="hang">
+        <a name="hang">
+            <h1>Hangman</h1>
+            <p><big>
+                In this game we first have to chose a difficulty from Amateur, Medium and Advanced. Based on our chosen difficulty lives are assigned. After that the system choses any random word from a document of 2465 words. Player has to guess the letter correctly before the life runs out. If player fails he/she will hanged or else he/she will be saved. After every round your result is stored in Hangman_Data file as a record. If you find any difficulties you can check out the help section.
+            </big></p>
+            <h4>Images : </h4>
+            <br>
+            <div class="row mb-2">
+                <div class="col-md-5">
+                    <img src="{{url_for('static', filename='outputs/hangman1.png')}}" class="shadow-lg" width="500" height="275">
+                </div>
+                <div class="col-md-5">
+                    <img src="{{url_for('static', filename='outputs/hangman2.png')}}" class="shadow-lg" width="500" height="275">
+                </div>
+            </div>
+            <br>
+            <a type="button" class="btn btn-outline-warning" href="{{url_for('static', filename='codes/Hangman.zip')}}">Download Source Code</a>
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+
+    <div id="drs">
+        <a name="drs">
+            <h1>Decision Review System GUI by Amaan</h1>
+            <p><big>
+                The video in the folder is used as input video. After that we can check the video for the Out or Notout decision in 6 different sppeds. Back, Back Slow, Back Very Slow, Next, Next Fast and Next Very Fast. Once we have reached our conclusion we can use Out or Notout button to display our decision. 
+            </big></p>
+            <h4>Images : </h4>
+            <br>
+            <div class="row mb-2">
+                <div class="col-md-4">
+                    <img src="{{url_for('static', filename='outputs/drs1.png')}}" class="shadow-lg" width="400" height="225">
+                </div>
+                <div class="col-md-4">
+                    <img src="{{url_for('static', filename='outputs/drs2.png')}}" class="shadow-lg" width="400" height="225">
+                </div>
+                <div class="col-md-4">
+                    <img src="{{url_for('static', filename='outputs/drs3.png')}}" class="shadow-lg" width="400" height="225">
+                </div>
+            </div> 
+            <br>
+            <a type="button" class="btn btn-outline-warning" href="{{url_for('static', filename='codes/DRS.zip')}}">Download Source Code</a>
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+
+    <div id="notepad">
+        <a name="notepad">
+            <h1>Notepad</h1>
+            <p><big>
+                This Notepad is made with Tkinter Module of Python. It has all the files properties like Save, Save as, Open, Create New etc. The About section has the Developer Info and you can Exit the application through menu as well. 
+            </big></p>
+            <h4>Images : </h4>
+            <br>
+            <div class="row mb-2">
+                <div class="col-md-5">
+                    <img src="{{url_for('static', filename='outputs/notepad1.png')}}" class="shadow-lg" width="600" height="375">
+                </div>
+            </div> 
+            <br>
+            <a type="button" class="btn btn-outline-warning" href="{{url_for('static', filename='codes/Notepad.zip')}}">Download Source Code</a>
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+
+    <div id="bday">
+        <a name="bday">
+            <h1>Automatic Birthday Wisher</h1>
+            <p><big>
+               This program will automatically wish your close people a Happy Birthday. First of all you will have to change the GMAIL_ID and GMAIL_PASSWORD in the program to the sender's ID and Password. Then all you have to do is Add Name, Birthday and Email in the Data file of people you want to wish. Schedule the program for the time you wish to message them. And the program will do it's work. You can customise the message to be send as well. 
+            </big></p>
+            <h4>Images : </h4>
+            <br>
+            <div class="row mb-2">
+                <div class="col-md-5">
+                    <img src="{{url_for('static', filename='outputs/bday1.png')}}" class="shadow-lg" width="450" height="400">
+                </div>
+                <div class="col-md-5">
+                    <img src="{{url_for('static', filename='outputs/bday2.jpeg')}}" class="shadow-lg" width="450" height="400">
+                </div>
+            </div>
+            <br>
+            <a type="button" class="btn btn-outline-warning" href="{{url_for('static', filename='codes/Birthday.zip')}}">Download Source Code</a>
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+
+    <div id='bill'>
+        <a name='bill'>
+            <h1>Cafe Bill Calculator GUI</h1>
+            <p><big>
+                The program provides you a list of dishes as menu. You have to order the foods you want by putting the values in the given columns. After you are finished with that click on order button. Your order wil be fixed and your bill will be generated along with CGST. The program keeps all the order history safe in Orders File. It also mentions the Name of customer, the order given by customer Date and Bill.
+            </big></p>
+            <h4>Images : </h4>
+            <br>
+            <div class="row mb-2">
+                <div class="col-md-5">
+                    <img src="{{url_for('static', filename='outputs/bill1.png')}}" class="shadow-lg" width="500" height="275">
+                </div>
+                <div class="col-md-5">
+                    <img src="{{url_for('static', filename='outputs/bill2.png')}}" class="shadow-lg" width="500" height="275">
+                </div>
+            </div>
+            <br>
+            <a type="button" class="btn btn-outline-warning" href="{{url_for('static', filename='codes/Bill.zip')}}">Download Source Code</a>
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+
+    <div id='currency'>
+        <a name='currency'>
+            <h1>Currency Converter</h1>
+            <p><big>
+                From this program you can convert the currencies into 52 different types. Starting from Argentanian Peso to US Dollar, this program have all the currencies present. All you have to do is select from menu either you have to convert any currency to INR or INR to any currency. After that choose the currency from given list. The converted value willbe printed on screen.
+            </big></p>
+            <br>
+            <a type="button" class="btn btn-outline-warning" href="{{url_for('static', filename='codes/Currency.zip')}}">Download Source Code</a>
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+
+    <div id='tic'>
+        <a name='tic'>
+            <h1>Tic-Tac-Toe</h1>
+            <p><big>
+                In this game first we will have to provides the names of both the players playing it. Then player1 has to choose either he wants to play with X or O. The right side of main grid is a sub-grid which denotes the location number for each box in the main grid. In the end program displays the name of the player who wins the match. And if its a draw the game displays a Draw.
+            </big></p>
+            <h4>Images : </h4>
+            <br>
+            <div class="row mb-2">
+                <div class="col-md-5">
+                    <img src="{{url_for('static', filename='outputs/ttt1.png')}}" class="shadow-lg" width="500" height="275">
+                </div>
+                <div class="col-md-5">
+                    <img src="{{url_for('static', filename='outputs/ttt2.png')}}" class="shadow-lg" width="500" height="275">
+                </div>
+            </div>
+            <br>
+            <a type="button" class="btn btn-outline-warning" href="{{url_for('static', filename='codes/TTT.zip')}}">Download Source Code</a>
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+
+    <div id='calculator'>
+        <a name='calculator'>
+            <h1>Calculator GUI</h1>
+            <p><big>
+                This is a Tkinter based Calculator GUI. Here you can perform addition, substraction, multiplication etc all kind of Mathematical functions. The buttons and background are designed to look more beatiful.
+            </big></p>
+            <h4>Images : </h4>
+            <br>
+            <div class="row mb-2">
+                <div class="col-md-5">
+                    <img src="{{url_for('static', filename='outputs/calc1.png')}}" class="shadow-lg" width="400" height="375">
+                </div>
+                <div class="col-md-5">
+                    <img src="{{url_for('static', filename='outputs/calc2.png')}}" class="shadow-lg" width="400" height="375">
+                </div>
+            </div>
+            <br>
+            <a type="button" class="btn btn-outline-warning" href="{{url_for('static', filename='codes/Calculator.zip')}}">Download Source Code</a>
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+
+    <div id='weight'>
+        <a name='weight'>
+            <h1>Weight Converter GUI</h1>
+            <p><big>
+                It is a Tkinter based Weight Converter GUI. First select the unit of input weight from the upside given menu, enter the weight and after that select the weight in which you want to convert your input weight. Then click on convert button, the converted weight will be displayed. You are provided with 7 different units for conversion, which consist of Gram, Kilogram, Milligram, Microgram, Pound, Tonne and Ounce.
+            </big></p>
+            <h4>Images : </h4>
+            <br>
+            <div class="row mb-2">
+                <div class="col-md-5">
+                    <img src="{{url_for('static', filename='outputs/weight1.png')}}" class="shadow-lg" width="400" height="275">
+                </div>
+            </div>
+            <br>
+            <a type="button" class="btn btn-outline-warning" href="{{url_for('static', filename='codes/Weight.zip')}}">Download Source Code</a>
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+
+    <div class="container"><a href="/project" class="btn btn-dark">Back to Projects</a>
+        <p class="float-end"><a href="/proj_det" class="btn btn-dark">Back to top</a></p>
+        <div>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}

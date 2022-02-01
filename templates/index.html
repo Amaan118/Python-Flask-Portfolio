@@ -1,0 +1,66 @@
+{% extends 'base.html' %} {% block head %} Home Page {% endblock head %} {%
+block body %}
+<br />
+<div class="container">
+  <div class="col-lg-6 col-md-8 mx-auto">
+    <b><h1 class="fw-light">Hello, I am Amaan </h1></b>
+    <p class="lead text-muted" style="white-space: pre-wrap;">A future Software Engineer who is currently pursuing his B-TECH in Computer Science and Engineering from SGGS Nanded. You can find more about Me on my LinkedIn, Instagram or from the About Section.
+Nice to Meet You !
+    </p>
+  </div>
+
+  <br />
+  <hr />
+  <br />
+
+  <div class="row">
+    <div class="col-lg-4">
+    <img src="{{url_for('static', filename='Home/project.png')}}" class="rounded-circle mx-0" width="40%" height="50%">
+        
+      <h2>Projects</h2>
+      <p>
+        Projects based on different programming languages i.e C, Python, Flask, Django etc.
+      </p>
+      <br>
+      <div>
+          <p><a class="btn btn-dark" href="/project">View Projects »</a></p>
+      </div>
+    </div>
+
+    <!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+        <img src="{{url_for('static', filename='Home/academic.png')}}" class="rounded-circle mx-0" width="40%" height="50%">
+
+      <h2>Academics</h2>
+      <p>All the records of my hardwork and perseverance. Data on my SSC, HSC, Under Graduation.</p>
+      
+      <br>
+      <div>
+          <p><a class="btn btn-dark" href="/academic">View Academics »</a></p>
+      </div>
+    </div>
+
+    <!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <img src="{{url_for('static', filename='Home/about.png')}}" class="rounded-circle mx-0" width="40%" height="50%">
+
+      <h2>About</h2>
+      <p>Know more about Me and my love for coding and my skills.</p>
+
+      <br>
+      <div>
+        <p><a class="btn btn-dark" href="/about">About Me »</a></p>
+      </div>
+    </div>
+    <!-- /.col-lg-4 -->
+  </div>
+
+  <br />
+  <br />
+  <br>
+  <hr />
+  <footer class="container">
+    <p class="float-end"><a href="/" class="btn btn-dark">Back to top</a></p>
+  </footer>
+  {% endblock body %}
+</div>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>{% block head %} {% endblock head %}</title>
+  </head>
+
+
+  <body>
+    <header>
+        <div class="px-3 py-1 bg-dark text-white">
+            <div class="container">
+              <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                <li>
+                  <a href="/" class="nav-link text-white my-2">
+                    <img src="{{url_for('static', filename='Home/home.ico')}}" width="30" height="30" class="mx-1">
+                    <p>Home</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="/project" class="nav-link text-white my-2">
+                    <img src="{{url_for('static', filename='Home/proj.ico')}}" width="30" height="30" class="mx-2">
+                    <p>Projects</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="/academic" class="nav-link text-white my-2">
+                    <img src="{{url_for('static', filename='Home/academic.ico')}}" width="30" height="30" class="mx-4">
+                    <p>Academics</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="/about" class="nav-link text-white my-2">
+                    <img src="{{url_for('static', filename='Home/abt.ico')}}" width="30" height="30" class="mx-2">
+                    <p>About</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="/resume" target="_blank" class="nav-link text-white my-2">
+                    <img src="{{url_for('static', filename='Home/resume.png')}}" width="30" height="30" class="mx-2">
+                    <p>Resume</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="/contact" class="nav-link text-white my-2">
+                    <img src="{{url_for('static', filename='Home/contact.ico')}}" width="30" height="30" class="mx-4">
+                    <p>Contact Me</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </header>
+      
+      {% block body %} {% endblock body %}
+
+    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+  </body>
+</html>

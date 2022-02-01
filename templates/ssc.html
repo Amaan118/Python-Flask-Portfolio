@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block head %}
+Secondary Education
+{% endblock head %}
+
+{% block body %}
+<style>
+    body {
+        background-image: url('{{url_for("static", filename="download/academic-bg.jpg")}}');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+</style>
+
+<br>
+<div class="container">
+    <form>
+        <fieldset disabled>
+            <legend><b>Secondary Education Details</b></legend>
+            <br>
+            <hr>
+            <div class="mb-3">
+                <h5><label for="disabledTextInput" class="form-label">Board : </label></h5>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="PUNE DIVISIONAL BOARD">
+            </div>
+
+            <div class="mb-3">
+                <h5><label for="disabledTextInput" class="form-label">Name : </label></h5>
+                <input type="text" id="disabledTextInput" class="form-control"
+                    placeholder="KHAN MOHAMMAD AMAAN G SAIFUL MALIK">
+            </div>
+
+            <div class="mb-3">
+                <h5><label for="disabledTextInput" class="form-label">School : </label></h5>
+                <input type="text" id="disabledTextInput" class="form-control"
+                    placeholder="THE PROGGRESSIVE EDUCATION SOCIETY'S URDU HIGH SCHOOL, SOLAPUR.">
+            </div>
+
+            <div class="mb-3">
+                <h5><label for="disabledTextInput" class="form-label">Year of Completion : </label></h5>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="2017">
+            </div>
+
+            <div class="mb-3">
+                <h5><label for="disabledTextInput" class="form-label">Percentage : </label></h5>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="88.40">
+            </div>
+
+        </fieldset>
+    </form>
+</div>
+
+<footer class="container">
+    <br>
+    <hr>
+    <p class="float-end"><a href="/hsc" class="btn btn-dark">HSC Details ></a></p>
+    <p>
+      <a href="/academic" class="btn btn-dark">Go Back</a>              
+    </p>
+</footer>
+{% endblock body %}
